@@ -1,0 +1,238 @@
+.resume{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+    font-size: 120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 6px;
+  }
+  .me{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+  }
+  .friends{
+    color: white;
+    margin-top: 25px;
+    flex: 50%;
+  }
+  p.friends{
+    text-align: center;
+    margin-top: 300px;
+    font: 32px solid;
+  }
+  .list{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    color: white;
+  }
+  .skills{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    color: white;
+  }
+  body{
+      background-color: black;
+  }
+  #SP{
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+  }
+  #like{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+  }
+  #footNav{
+      size: 150px;
+  }
+  #table{
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    border-style: groove;
+    background: white;
+    box-shadow: 5px 10px 20px;
+  }
+  .tab{
+    width: 100%;
+    margin-top: 20px;
+    border: 10px solid white;
+    border-radius: 30px;
+  }
+  #nameList{
+    border: 10px solid white;
+    background-color: blueviolet;
+  }
+  td{
+    border: 1px solid white;
+    background-color: #29aae2;
+    color: white;
+  }
+  #myName{
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #cardCon{
+    margin-top: 15px;
+  }
+  .card{
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    padding: 2px;
+    border: 1px double;
+    background: black;
+    width: 200px;
+    /* height: 100%; */
+    border-radius: 10px;
+    /* box-shadow: 5px 5px 5px white; */
+    display: inline-block;
+    margin-left: 27.5px;
+    margin-right: 27.5px;
+    transition: 400ms;
+  }
+  .card img{  
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    transition: 400ms;
+  }
+  .card:hover{
+    color: white;
+    text-shadow: 5px 5px 10px lightskyblue;
+    margin-top: 15px;
+    padding: 2px;
+    border: 1px double;
+    width: 200px;
+    /* height: 100%; */
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px #daf1f1;
+    transform: scale(1.2);
+  }
+  footer{
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .container{
+    position: relative;
+  }
+  .contactPics img{
+    height: 300px; 
+    width: 300px; 
+    border-radius: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    transition: 400ms;
+  }
+  .contactPics img:hover{
+    height: 310px; 
+    width: 310px;
+    box-shadow: 5px 5px 5px blue;
+    margin-left: 8px;
+    filter: brightness(160%);
+  }
+  .contactPics img.git:hover{
+    height: 310px; 
+    width: 310px;
+    box-shadow: 5px 5px 5px white;
+    margin-left: 8px;
+    filter: brightness(160%);
+  }
+  .pic{
+    margin-left: 435px; 
+    margin-top: 35px; 
+    /* border: 5px; */
+  }
+  .pic img{
+    border-radius: 20px;
+    border-style: ridge;
+    border: 5px;
+    border-radius: 20px; 
+    transition: 400ms;
+  }
+  .pic img:hover{
+    box-shadow: 0px 10px 20px #daf1f1;
+    border-radius: 20px;
+    border: 5px yellow double;
+    transition: 400ms;
+    transform: scale(1.1);
+  }
+  .row{
+    display: flex;
+  }
+  .row::after{
+    display: table;
+    content: '';
+    clear: both;
+  }
+  .info{
+    background: transparent;
+    border: 5px yellow double;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 5px;
+    transition: 400ms;
+    cursor: pointer;
+  }
+  .info:hover{
+    background: yellow;
+    border: 5px yellow double;
+    border-radius: 10px;
+    color: black;
+    margin-bottom: 5px;
+    size: 10px;
+  }
+  nav{
+    border: 5px white double;
+    background-color: transparent;
+  }
+  nav h1{
+    border: 10px yellow double;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+  }
+  img.friends{
+    height: 100%;
+    width: 200px;
+    border-radius: 10px;
+  }
+  .fbFooter{
+    height: 50px; 
+    width: 50px;
+    transition: 400ms;
+  }
+  .fbFooter:hover{
+    transform: scale(1.1);
+    filter: brightness(140%);
+  }
+  .perhaps{
+    text-align: center;
+  }
+  .spec{
+    transition: 400ms;
+    border-radius: 0;
+  }
+  .spec:hover{
+    background-color: yellow;
+    border-radius: 5px;
+    transition: 400ms;
+    color: black;
+  }

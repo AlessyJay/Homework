@@ -1,0 +1,135 @@
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+body, html{
+    font-family:monospace;
+    background: lightblue;
+}
+
+/* headline starts here */
+.text{
+    width: 50%;
+    display: inline-block;
+    margin-top: 80px;
+}
+.headline{
+    font-size: 34px;
+    margin-left: 100px;
+    margin-bottom: 120px;
+}
+.headline h1{
+    color: blue;
+    text-shadow: 1px 5px 10px white;
+}
+.headline p{
+    text-shadow: 1px 5px 10px black;
+}
+
+/* Image */
+.picture{
+    width: 60%;
+    position: absolute;
+    bottom: 300px;
+    z-index: 1;
+}
+
+/* loginBox starts here */
+.login{
+    width: 40%;
+    float: right;
+    margin-top: 100px;
+    margin-right: 150px;
+}
+.loginBox{
+    font-size: 16px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.user{
+    width: 100%;
+    
+}
+.user input{
+    width: 100%;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 1;
+    border: 1px skyblue solid;
+    transition: 400ms;
+}
+.user input:focus{
+    border: 3px skyblue solid;
+}
+.user button{
+    text-align: center;
+    margin-left: 92px;
+    margin-top: 20px;
+    width: 60%;
+}
+.user .btn-login{
+    background: blue;
+    border: 5px dashed blue ;
+    border-radius: 10px;
+    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 60%;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+.user .btn-login:hover{
+    transform: scale(1.1);
+    filter: brightness(120%);
+    box-shadow: 5px 5px 20px black;
+}
+.user .btn-signUp{
+    background: green;
+    border: 5px dashed green ;
+    border-radius: 10px;
+    margin-left: 160px;
+    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 30%;
+    font-size: 24px;
+    color: white;
+    transition: 400ms;
+    cursor: pointer;
+}
+.user .btn-signUp:hover{
+    transform: scale(1.1);
+    filter: brightness(120%);
+    box-shadow: 5px 5px 20px black;
+}
+.user p{
+    margin-left: 142px;
+}
+.language ul{
+    font-size: 16px;
+    list-style: none;
+    transition: 400ms;
+}
+.language li:hover{
+    text-decoration: underline;
+}
+.language li{
+    /* float: left; */
+    display: inline-block;
+}
+
+/* footer starts here */
+footer{
+    text-align: center;
+    height: 180px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: white;
+}

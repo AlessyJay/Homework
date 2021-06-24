@@ -1,0 +1,229 @@
+/* temp */
+
+section,
+header,
+footer {
+  outline: 1px lime;
+}
+
+/* Golbal */
+h1,
+body {
+  margin: 0;
+}
+body {
+  max-width: 1400px;
+  background: lightblue;
+  outline: 1px lime;
+  margin: auto;
+}
+html {
+  background: darkgray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.current{
+    color: deeppink;
+    font-weight: bold;
+}
+/* Header start from here */
+header{
+    background: skyblue;
+    color: whitesmoke;
+    min-height: 70px;
+    padding-top: 30px;
+    border-bottom: 3px solid salmon;
+}
+header .branding{
+    float: left;
+    margin-top: 10px;
+}
+header nav{
+    float:right;
+    margin-bottom: 15px;
+}
+header ul{
+    list-style: none;
+}
+header li{
+    display: inline-block;
+    padding: 10px;
+}
+header a{
+    text-decoration: none;
+    font-size: 16px;
+    color: inherit;
+    text-transform: uppercase;
+    transition: 400ms;
+}
+header a:hover{
+    color: deeppink;
+    cursor: pointer;
+}
+header span{
+    color: deeppink;
+}
+
+
+/* Showcase starts from here */
+.show-case {
+    min-height: 400px;
+    background: url("https://picsum.photos/id/2/1500/500/?blur=4") no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.show-case h1{
+    margin-top: 100px;
+    font-size: 64px;
+    color: deeppink;
+}
+.show-case p{
+    margin-top: 15px;
+    font-size: 24px;
+    color: deeppink;
+}
+
+/* Newsletter starts from here */
+.newsLetter{
+    padding: 15px;
+    background: lightskyblue;
+    color: coral;
+}
+.newsLetter h2{
+    float: left;
+}
+.newsLetter form{
+    float: right;
+    margin-top: 20px;
+}
+.newsLetter input[type='email']{
+    width: 250px;
+    height: 25px;
+    padding: 4px;
+    border-radius: 4px;
+    border: none;
+}
+.newsLetter button{
+    height: 35px;
+    background-color: coral;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 0 20px;
+}
+
+/* Boxes start here */
+.boxes{
+    padding: 15px;
+    background: lightblue;
+    color: coral;
+    text-align: center;
+}
+.boxes img{
+    height: 100px;
+    transition: 400ms;
+}
+.boxes .card{
+    margin-left: 18px;
+    margin-right: 18px;
+    width: 30%;
+    float: left;
+}
+.boxes img:hover{
+    transform: scale(1.3);
+    filter: brightness(140%);
+}
+
+/* Footer starts here */
+.foot{
+    padding: 15px;
+    background: blue;
+    color: coral;
+    text-align: center;
+}
+
+/* About us info starts here */
+.info{
+    text-align: left;
+    margin-top: 15px;
+    line-height: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    color: black;
+    width: 67%;
+    float: left;
+}
+.info1{
+    text-align: right;
+    background: red;
+    border-radius: 10px;
+    width: 30%;
+    float:right;
+    margin-top: 50px;
+}
+
+/* product cards start here */
+.productSection{
+    width: 58%;
+}
+.sessions{
+    width: 60%;
+    margin-top: 20px;
+    background: yellow;
+    color: deeppink;
+    float:left;
+    padding: 5px;
+}
+.detail{
+    width: 35%;
+    padding: 5px;
+    background: violet;
+    color: black;
+    display: inline;
+    float:right;
+    position: relative;
+    top: -420px;
+}
+.btn-buy{
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 5px double white;
+    transition: 400ms;
+    font-size: 24px;
+}
+.btn-buy span{
+    display: none;
+}
+.btn-buy span:after{
+    display: inline-block;
+    opacity: 0;
+}
+.btn-buy:hover{
+    border: 5px double black;
+    background: white;
+    color: black;
+    font-size: 24px;
+}
+
+/* product info */
+.choose{
+    width: 40%;
+    float: right;
+    position: relative;
+    top: -1200px;
+    /* bottom: 200px; */
+    text-align: center;
+    background: deeppink;
+    padding: 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="friend.css" rel="stylesheet">
+    <style>
+      body{
+        background-image: url(https://images.pexels.com/photos/629162/pexels-photo-629162.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-629162.jpg&fm=jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        backdrop-filter: blur(8px);
+      }
+      .skillCard{
+        margin-bottom: 60px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+      .skillCard img:hover{
+        transform: scale(1.2);
+      }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid" style='margin-left: 670px;'>
+          <a class="navbar-brand" href="home.html"><h1>Home</h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class='d-flex' style='margin-right: 80px;'>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style='font-size: 18px;'>
+                  Menu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./friends.html">Friend lists</a></li>
+                  <li><a class="dropdown-item" href="./special.html">Special</a></li>
+                  <li><a class="dropdown-item" href="./contact.html">Contact me</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </nav> -->
+
+    <div class="container">
+      <h1 class="resume">My Resume</h1>
+      <hr style="color: black;">
+      <!-- <h2 class="me">Who am I?</h2>
+      <p style="border: white; border-radius: 8px; color:white; border-color: pink; text-align:center;">I am Peeranat Somboonsirikul</p>
+      <a href='./profil.html'>
+        <button type="button" class="btn btn-outline-primary btn-lg" style='margin-left: 83.5vh;'>More</button>
+      </a> -->
+      <!-- <hr style="color: black;"> -->
+      <h1 style="color: white; text-align: center; text-shadow: -1px -1px 0 #000,  1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;"><em>Skills: </em></h1>
+      <div class='skillCard'>
+        <div class="card">
+          <img src='https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?cs=srgb&dl=pexels-kevin-ku-577585.jpg&fm=jpg'>
+            <div class='container' id='cardCon'>
+              <h3>Coding</h3>
+              <p style='margin-top: 15px;'>Coding is one of my passion!</p>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+            <a href='profil.html'>
+              <button class='info'>Read More</button>
+            </a>
+        </div>
+        <div class="card">
+          <img src='https://images.pexels.com/photos/96380/pexels-photo-96380.jpeg?cs=srgb&dl=pexels-freestocksorg-96380.jpg&fm=jpg'>
+            <div class='container' id='cardCon'>
+              <h3>Music</h3>
+              <p style='margin-top: 15px;'>
+                Playing instruments is also one of my passion!
+              </p>
+            </div>
+            <a href='profil.html'>
+              <button class='info'>Read More</button>
+            </a>
+        </div>
+        <div class="card">
+          <img src='https://images.pexels.com/photos/4162449/pexels-photo-4162449.jpeg?cs=srgb&dl=pexels-ivan-samkov-4162449.jpg&fm=jpg'>
+            <div class='container' id='cardCon'>
+              <h3>Muay Thai</h3>
+              <p style='margin-top: 15px;'>
+                Practicing Muay Thai is a peace of mind,<br>
+                it's not only just help you healthier,<br>
+                but it's also sharpen your personalities.
+              </p>
+            </div>
+            <a href='profil.html'>
+              <button class='info'>Read More</button>
+            </a>
+        </div>
+        <div class="card">
+          <img src='https://images.pexels.com/photos/3945673/pexels-photo-3945673.jpeg?cs=srgb&dl=pexels-cottonbro-3945673.jpg&fm=jpg'>
+            <div class='container' id='cardCon'>
+              <h3>Gaming</h3>
+              <p style='margin-top: 15px;'>
+                I started playing games since I was a kid,<br>
+                my father bought me my very first computer<br>
+                when I was 4 years old.
+              </p>
+            </div>
+            <a href='profil.html'>
+              <button class='info'>Read More</button>
+            </a>
+        </div>
+      </div>
+
+      <hr style="color: white;">
+      <div class='row'>
+        <img class='friends' src='https://images.pexels.com/photos/3491674/pexels-photo-3491674.jpeg?cs=srgb&dl=pexels-aline-viana-prado-3491674.jpg&fm=jpg' id='frImg'>
+        <p class="friends">
+          What about my <span class='spec' onclick="alert('My friends are really good, to be honest. :D')">friends?</span><br><br>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Laudantium aperiam, velit sequi accusamus, laborum porro eius, 
+          vel exercitationem aliquam minima ullam voluptate vitae officiis asperiores sed hic harum perferendis. 
+          Repellendus architecto illum expedita, veritatis perspiciatis numquam quasi voluptates animi odit.
+          <br><br><a href='friends.html' class='friends'>
+            <button class='info'>Read More</button>
+          </a>
+        </p>
+      </div>
+
+      <hr style="color: white;">
+    </div>
+      <footer class="bot">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="footNav">
+          <p style="font-size: 25px; color: white; font-family: monospace; margin-left: 20px;">Copyright &#64 Tony Crimson</p>
+          <a href="https://www.facebook.com/TonyCrims0n/" style="margin-left: 1100px;" target='blank'>
+            <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/facebook_icon_130940.png" class='fbFooter'>
+          </a>
+        </nav>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

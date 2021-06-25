@@ -170,6 +170,7 @@
 //     Math.max(a,b,c,d);
 // };
 
+// Function expression
 // No.1
 // const express = function (a = 17, b = 7){
 //     return a*b;
@@ -199,3 +200,81 @@
 // }
 
 // ask('Who are you?', Admin, not_admin);
+
+
+// Arrow function
+// No.1
+// arrow = (a = 23, b = 9) => a*b;
+
+// console.log(arrow());
+
+// No.3
+// const square = n => {
+//     n ** 2;
+//   };
+  
+//   console.log(square(7)); // undefined, because it has no return.
+
+// const calcCircleArea = r => Math.PI * r ** 2;
+// console.log(calcCircleArea(3)); // 28.274333882308138, because it automatically added return.
+
+// No.4
+// const logName = (name) => console.log(name); //Both code are working fine!.
+// const logName = name => console.log(name);
+
+// No.5
+// ask = (question, yes, no) => {
+//     if (confirm(question)) yes();
+//     else no();
+// }
+
+// ask('Do you agree?', 
+//   function () { alert('You agreed.'); },
+//   function () { alert('You canceled the execution.'); }
+// );
+
+// No.6
+// day2Second = function(){
+//     hour = 24;
+//     minute = 60;
+//     second = 60;
+
+//     d = prompt('Day');
+//     console.log(d * hour * minute * second);
+
+// }
+
+// day2Second();
+
+// No.7
+// mod7 = function(i){
+//     i = +prompt('Mod');
+//     if(i % 7 === 0){
+//         console.log(true)
+//     } else {
+//         console.log(false)
+//     }
+// }
+
+// mod7();
+
+// No.8
+// football = function(input, score){
+//     while(true){
+//     input = prompt('Statement');
+//     score = 0;
+    
+//     if(input === "ชนะ"){
+//         score += 3;
+//         console.log(`You got 3 scores, now you have ${score}`);
+//     } else if(input === "เสมอ"){
+//         score += 1;
+//         console.log(`You got 1 score, now you have ${score}`)
+//     } else if (input === 'แพ้'){
+//         score += 0;
+//         console.log(`You got no score! You have ${score} in total!`);
+//     }
+//     }
+// }
+
+// football();

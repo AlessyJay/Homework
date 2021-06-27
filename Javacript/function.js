@@ -97,12 +97,10 @@
 
 // function isPrime(num){
 //     num = prompt();
-//     for(i = 0; i < num; i++){
+//     for(i = 2; i < num; i++){
 //         if(num % i === 0){
 //             console.log(i);
-//             return false
 //         };
-//         num > 1;
 //     }
 // }
 
@@ -166,9 +164,14 @@
 // console.log(checkAge3());
 
 // No.14
-// function Max(a,b,c,d){
-//     Math.max(a,b,c,d);
+// function Max(a = 0,b = 0,c = 0,d = 0){
+//     sum = Math.max(a,b,c,d);
+//     return sum
 // };
+// console.log(Max(2));
+// console.log(Max(2, 4));
+// console.log(Max(2, 4,6));
+// console.log(Max(2, 4,6,3));
 
 // Function expression
 // No.1
@@ -200,6 +203,18 @@
 // }
 
 // ask('Who are you?', Admin, not_admin);
+
+// No.4
+// function magic() {
+//     return function (x) {
+//       return x * 42;
+//     };
+// }
+// const answer = magic();
+// console.log(answer); // error
+// console.log(answer(1337)); // 56154
+// console.log(magic(1337)(42)); // 1764
+  
 
 
 // Arrow function
@@ -278,3 +293,19 @@
 // }
 
 // football();
+
+// No.9
+isLeapYear = function(){
+    year = +prompt("Year");
+    if(year % 4 === 0 && year % 100 !== 0){
+        console.log('It is a leap year!');
+    } else if (year % 400 !== 0 && year % 100 === 0){
+        console.log('It is not a leap year!');
+    } else if(year % 400 === 0){
+        console.log('It is a leap year!');
+    } else {
+        console.log('It is not a leap year!');
+    }
+}
+
+isLeapYear();

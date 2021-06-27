@@ -73,7 +73,7 @@
 
 // for(i = 1; i <= 4; i++){
 //     sum += sym;
-//     console.log(sum + '\n');
+//     console.log(sum);
 // }
 
 // No.7
@@ -95,4 +95,37 @@
 //     allSum += input;
 // }
 
-// 
+// No. 9 
+// isRandom = function(){
+//     user1 = +prompt('First number (1-99): ');
+//     i = 0;
+
+//     while (i < 100){
+//         user2 = +prompt('Second number (1-99): ');
+//         if(user2 === user1){
+//             alert('You\'re correct!');
+//             break;
+//         } else if (user2 < user1){
+//             alert('You\'re lower than User 1!');
+//         } else {
+//             alert('You\'re higher than User 1!');
+//         }
+//     }
+// }
+// isRandom();
+
+// No.10
+// isPrime = function(prime){
+//     for(i = 2; i <= prime; i++){
+//         let count = 0;
+//         for(j = 2; j <= 100; j++){
+//             if(i%j === 0){
+//                 count++;
+//             }
+//         }
+//     }
+//     if(count == 1){
+//         console.log(i);
+//     }
+// }
+// isPrime(100);

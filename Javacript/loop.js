@@ -76,6 +76,19 @@
 //     console.log(sum);
 // }
 
+// No.6 solution 2
+// let str = '';
+
+// for(i = 1; i <= 4; i++){
+//     for(j = 1; j <=4; j++){
+//         if(i>=j){
+//             str += '*\n';
+//         }
+//         break;
+//     }
+//     console.log(i);
+// }
+
 // No.7
 // for(i = 1; i <= 12; i++){
 //     console.log(`2*${i} = ${i*2}`);
@@ -85,13 +98,14 @@
 // i = 0;
 // allSum = 0;
 
-// while(i < 100){
+// while(1){
 //     input = Number(prompt());
-//     if(input === 0 || input === null || input < 0 || input === ''){
+//     if(input === 0 || input === null || input < 0 || input.trim === ''){
 //         alert(allSum);
+//         alert(`You have entered ${i} times!`);
 //         break;
 //     }
-//     i++;
+//     console.log(i++);
 //     allSum += input;
 // }
 
@@ -105,7 +119,9 @@
 //         if(user2 === user1){
 //             alert('You\'re correct!');
 //             break;
-//         } else if (user2 < user1){
+//         } else if (user2 === null || user2.trim === '' || user2 === 0){
+//             alert('Wrong! Please, input correct number!');
+//         } else if(user2 < user1) {
 //             alert('You\'re lower than User 1!');
 //         } else {
 //             alert('You\'re higher than User 1!');
@@ -115,17 +131,13 @@
 // isRandom();
 
 // No.10
-// isPrime = function(prime){
-//     for(i = 2; i <= prime; i++){
-//         let count = 0;
-//         for(j = 2; j <= 100; j++){
+// isPrime = function(prime = 0){
+//     for(i = 2; i < 100; i++){
+//         for(j = 2; j < i; j++){
 //             if(i%j === 0){
-//                 count++;
+//                 break;
 //             }
 //         }
-//     }
-//     if(count == 1){
-//         console.log(i);
 //     }
 // }
 // isPrime(100);

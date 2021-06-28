@@ -97,11 +97,12 @@
 
 // function isPrime(num){
 //     num = prompt();
-//     for(i = 2; i < num; i++){
-//         if(num % i === 0){
-//             console.log(i);
+//     for(i = 2; i <= num; i++){
+//         if(i % num === 0){
+//             break;
 //         };
 //     }
+//     console.log(i);
 // }
 
 // isPrime();
@@ -148,6 +149,10 @@
 //     if(age >= 18){
 //         console.log(`You can pass`);
 //     }
+
+// solution 2
+//     if(age >= 18) return true;
+//     return confirm('Did parents allow you?);
 // };
 
 // function checkAge2(age){
@@ -157,8 +162,7 @@
 
 // function checkAge3(age){
 //     age +prompt('Age');
-//     (age < 18) || ('You cannot pass!')
-//     (age > 18) || ('You can pass!')
+//     (age < 18) || 'You cannot enter!' : 'You can pass';
 // };
 
 // console.log(checkAge3());
@@ -169,9 +173,9 @@
 //     return sum
 // };
 // console.log(Max(2));
-// console.log(Max(2, 4));
-// console.log(Max(2, 4,6));
-// console.log(Max(2, 4,6,3));
+// console.log(Max(2,4));
+// console.log(Max(2,4,6));
+// console.log(Max(2,4,6,3));
 
 // Function expression
 // No.1
@@ -295,17 +299,279 @@
 // football();
 
 // No.9
-isLeapYear = function(){
-    year = +prompt("Year");
-    if(year % 4 === 0 && year % 100 !== 0){
-        console.log('It is a leap year!');
-    } else if (year % 400 !== 0 && year % 100 === 0){
-        console.log('It is not a leap year!');
-    } else if(year % 400 === 0){
-        console.log('It is a leap year!');
-    } else {
-        console.log('It is not a leap year!');
-    }
-}
+// isLeapYear = function(){
+//     // year = +prompt("Year");
+//     if(year % 4 === 0 && year % 100 !== 0){
+//         console.log('It is a leap year!');
+//     } else if (year % 400 !== 0 && year % 100 === 0){
+//         console.log('It is not a leap year!');
+//     } else if(year % 400 === 0){
+//         console.log('It is a leap year!');
+//     } else {
+//         console.log('It is not a leap year!');
+//     }
+// }
 
-isLeapYear();
+// isLeapYear();
+
+// No.10
+// age = function(yearBorn, dayYear = 365){
+//     yearBorn = +prompt("Your year");
+//     for(i = 0; i < dayYear; i++){
+//         if(dayYear += isLeapYear) {dayYear += 1} else {};
+//     }
+//     return yearBorn,yearNow;
+// }
+
+// age();
+
+// No.11
+// const factorial = n =>{
+//     if(n === 1 || n === 0) return 1;
+//     return n * factorial(n - 1);
+// }
+
+// console.log(factorial(5));
+
+// Object
+
+// const car = {
+//     name: 'Toyota',
+//     color: 'White, Black, Blue',
+//     model: 'SUV, Sedan, Van, Truck',
+//     distributor: {
+//         name: 'Bank Tonglor',
+//         address: {
+//             province: 'Bangkok',
+//         }
+//     }
+// };
+
+// car.price = 35000; // Add price to the car.
+// car.color = 'Red'; // Update color of car.
+// delete car.color; // Delete color in car.
+
+// No.1
+// let person = {
+//     name: 'James',
+//     gender: 'Male',
+//     Age: 28,
+//     address: 'London',
+//     Phone: '123456789'
+// }
+
+// console.log(person);
+
+// No.2
+// let user = {
+    
+// }
+
+// user.name = 'John';
+// user.surname = 'Doe';
+// user.name = 'Matt';
+// delete user.name;
+// console.log(user);
+
+// No.3 
+// objectCheck = function(){
+//     let obs = {
+        
+//     }
+//     console.log(obs);
+// }
+
+// objectCheck();
+
+// No.4
+// salaryCheck = function(){
+//     let salary = {
+//         John: 100,
+//         Ann: 160,
+//         Pete: 130
+//     };
+
+//     sum = salary.John + salary.Ann + salary.Pete;
+//     console.log(sum);
+
+//     if(salaryCheck === ''){
+//         return 0;
+//     }
+// }
+
+// salaryCheck();
+
+// No.5
+// mul = function(){
+//     menu = {
+//         width: 600,
+//         height: 900,
+//         title: 'My menu'
+//     };
+//     sum = menu.width * menu.height;
+
+//     console.log(sum)
+// }
+
+// mul();
+
+// No.6
+// variable = function(){
+//     user = {
+//         name: '',
+//         email: '',
+//         pass: '',
+//     }
+//     user.name = prompt(`Please, type in your name.`);
+//     user.email = prompt(`Please, type in your name.`);
+//     user.pass = prompt(`Please, type in your name.`);
+
+//     alert(`${user.name} ${user.email} ${user.pass}`);
+// }
+
+// variable();
+
+// No.7
+// create = function(){
+//     str = '';
+//     while(1){
+//         ask = prompt(`Your topic`);
+//         ask2 = prompt(`What's on your mind?`);
+
+//         list = {
+//             ask = ask2,
+//         }
+//         if(ask == 'stop' || ask2 == 'stop'){
+        
+//             break;
+//         }
+//     }
+//     console.log(list);
+// }
+
+// create();
+
+// No.8
+// create = function(){
+//     while(1){
+//         ask = prompt(`Fruit`);
+//         ask2 = prompt(`What's on your mind?`);
+
+//         list = {
+//             Fruit: ask,
+//             num: ask2
+//         }
+//         if(num > 1){
+//             list.Fruit = `Fruits`
+//         }
+//     }
+//     console.log(list);
+// }
+
+// create();
+
+// No.12
+// const product1 = { name: 'Coke', price: 18, size: '500mL' };
+
+// const product2 = product1;
+// product2.name = 'Pepsi';
+// product2.price = 19;
+
+// console.log(product1); // Coke, 18, 500ml
+// console.log(product2); // Pepsi, 19, 500ml
+// console.log(product1 === product2); // true
+
+// No.13
+// const user = { name: 'Jack', role: 'ADMIN' };
+// const admin = { name: 'Jack', role: 'ADMIN' };
+// console.log(user === admin); // false, because user and admin are not paired with each other.
+
+// No.14
+// copy = function(){
+//     const notebook = {
+//         brand: 'ASUS',
+//         model: 'Vivobook D413IA-EB303TS',
+//         processor: 'AMD Ryzen 7 4700U 3.6GHz',
+//         graphics: 'Integrated Graphics : AMD Radeon Graphics',
+//         ram: '8GB DDR4 Onboard',
+//         storage: '512GB PCIe NVMe M.2 SSD'
+//     };
+
+//     clone = {};
+//     for(let key in notebook){
+//         clone[key] = notebook[key];
+//     }
+
+//     assigning = {};
+//     Object.assign(assigning,notebook);
+
+//     console.log(clone);
+//     console.log(assigning);
+// }
+
+// copy();
+
+// No.15
+// const state1 = { username: 'john', point: 100, loading: true };
+
+// createState = function(loading, point){
+//     this.loading = loading;
+//     this.point = point;
+//     this.username = 'john';
+// }
+
+// let state2 = new createState(false, 75);
+// state2.success = true;
+// console.log(state2);
+
+// No.16
+// const permission1 = { canView: false, canDelete: false };
+// const permission2 = { canUpdate: true, canCreate: true };
+// const permission3 = { canCreate: false, canDelete: true };
+// const permission4 = { canView: true };
+
+// const permission = Object.assign(permission1,permission2,permission3,permission4);
+// console.log(permission);
+
+// No.17
+// let user = {
+//     name: 'John',
+//     sayHi: function () {
+//       console.log(this.name);
+//     }
+//   };
+  
+//   (user.sayHi)(); // John
+
+// No.18
+// var name = 'Joe';
+// function makeUser() {
+//   return {
+//     name: 'John',
+//     ref: this
+//   };
+// }
+// let user = makeUser();
+// console.log(user.ref.name); // John
+
+// No.19
+// let calculator = {
+//     read: {
+//         ask1 : +prompt("Num 1"),
+//         ask2 : +prompt('Num 2'),
+//     },
+//     sum : function(){
+//         this.read.ask1;
+//         this.read.ask2;
+//         return this.read.ask1 + this.read.ask2;
+//     },
+//     mul : function(){
+//         this.read.ask1;
+//         this.read.ask2;
+//         return this.read.ask1 * this.read.ask2;
+//     },
+// };
+  
+//   calculator.read;
+//   alert(calculator.sum());
+//   alert(calculator.mul());

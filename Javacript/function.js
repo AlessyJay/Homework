@@ -374,44 +374,51 @@
 // console.log(user);
 
 // No.3 
-// objectCheck = function(){
-//     let obs = {
-        
+// objectCheck = function(obj){
+//     for(let key in obj){
+//         return false;
 //     }
-//     console.log(obs);
+//     return true;
 // }
 
 // objectCheck();
 
 // No.4
-// salaryCheck = function(){
-//     let salary = {
-//         John: 100,
-//         Ann: 160,
-//         Pete: 130
-//     };
-
-//     sum = salary.John + salary.Ann + salary.Pete;
-//     console.log(sum);
-
-//     if(salaryCheck === ''){
-//         return 0;
+// salaryCheck = function(obj){
+//     sum = 0;
+//     for(let key in obj){
+//         sum += obj[key];
 //     }
+//     return sum;
 // }
 
-// salaryCheck();
+// salary = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130
+// };
+
+// console.log(salaryCheck(salary));
 
 // No.5
-// mul = function(){
-//     menu = {
-//         width: 600,
-//         height: 900,
-//         title: 'My menu'
-//     };
-//     sum = menu.width * menu.height;
+// mul = function(obj, num){
+//     const sum = {};
 
-//     console.log(sum)
+//     for(let key in obj){
+//         if(isNaN(obj[key])){
+//             sum[key] = obj[key];
+//         } else {
+//             sum[key] = obj[key] * num;
+//         }
+//     }
+//     return sum;
 // }
+
+// menu = {
+//     width: 600,
+//     height: 900,
+//     title: 'My menu'
+// };
 
 // mul();
 
@@ -427,23 +434,39 @@
 //     user.pass = prompt(`Please, type in your name.`);
 
 //     alert(`${user.name} ${user.email} ${user.pass}`);
+
+// Solution 2
+    // const username = prompt(`Enter your name`);
+    // const email = prompt(`Enter your email`);
+    // const password = prompt(`Enter password`);
+
+    // const user = {
+    //     username,
+    //     email,
+    //     password,
+    // }
 // }
 
 // variable();
 
 // No.7
 // create = function(){
-//     str = '';
+//     list = {};
+
 //     while(1){
 //         ask = prompt(`Your topic`);
-//         ask2 = prompt(`What's on your mind?`);
-
-//         list = {
-//             ask = ask2,
-//         }
-//         if(ask == 'stop' || ask2 == 'stop'){
-        
+//         if(ask == 'stop'){
 //             break;
+//         }
+//         ask2 = prompt(`What's on your mind?`);
+//         if(ask2 == 'stop'){
+//             break;
+//         }
+
+//         if(ask && ask.trim()){
+//             list[ask] = ask2;
+//         } else {
+//             alert(`Invalid key!`);
 //         }
 //     }
 //     console.log(list);
@@ -453,22 +476,85 @@
 
 // No.8
 // create = function(){
+//     list = {}
 //     while(1){
 //         ask = prompt(`Fruit`);
-//         ask2 = prompt(`What's on your mind?`);
+//         if(ask === 'stop') break;
+//         ask2 = +prompt(`Number of the fruit?`);
+//         if(ask2 === 'stop') break;
 
-//         list = {
-//             Fruit: ask,
-//             num: ask2
-//         }
-//         if(num > 1){
-//             list.Fruit = `Fruits`
+//         if(ask.trim() && ask){
+//             if(ask2 > 1){
+//                 list[`${ask}s`] = ask2;
+//             } else {
+//                 list[ask] = ask2;
+//             }
 //         }
 //     }
 //     console.log(list);
 // }
 
 // create();
+
+// No.9
+// const name = prompt(`Enter product name`);
+// const amount = prompt(`Enter amount`);
+// const price = prompt(`Enter price`);
+// const discount = prompt(`Enter discount`);
+
+// const product =  {
+//     name,
+//     amount,
+//     price,
+//     discount,
+// }
+
+// if(discount !== 0){
+//     product.discount = discount;
+// }
+
+// function calNetPrice(obj){
+//     if(obj.discount){ //Using if-else
+//         return obj.price * obj.amount * (100 - obj.discount) / 100
+//     }
+//     return obj.price * obj.amount;
+
+//     // return obj.price * obj.amount * (100 - obj.discount || 0) / 100 //Using truthy value
+// }
+
+// console.log(calNetPrice(product));
+
+// No.10
+// const employees = {
+//     john: { salary: 1000, address: { district: 'Ratchathewi', province: 'Bangkok' } },
+//     peter: { salary: 1500, address: { district: 'Pathumwan', province: 'Bangkok' } },
+//     mike: { salary: 800, address: { district: 'Pakkret', province: 'Nonthaburi' } },
+//     sarah: { salary: 2200, address: { district: 'Sriraja', province: 'Chonburi' } }
+// };
+
+// const name = prompt(`Enter name`);
+
+// if(employees[name]){
+//     console.log(`Name: ${name}, 
+//     salary: ${employees[name].salary},
+//     address: ${employees[name].address.district}, 
+//     ${employees[name].address.province}`);
+// } else {
+//     console.log(`Employee was not found!`);
+// }
+
+//Name: john, salary: 1000, address: Ratchathewi, Bangkok
+
+// No.11
+// const user = {
+//     email: 'cc@gmail.com',
+//     isActive: true
+//   };
+  
+//   user.isActive = false;
+//   console.log(user); // false
+//   user = {};
+//   console.log(user); // error
 
 // No.12
 // const product1 = { name: 'Coke', price: 18, size: '500mL' };
@@ -575,3 +661,4 @@
 //   calculator.read;
 //   alert(calculator.sum());
 //   alert(calculator.mul());
+

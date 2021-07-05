@@ -662,3 +662,69 @@
 //   alert(calculator.sum());
 //   alert(calculator.mul());
 
+// No.20
+// function Calculator() {
+//     this.read = function() {
+//         this.ask1 = +prompt(`First number!`);
+//         this.ask2 = +prompt(`Second number!`);
+//     }
+//     this.plus = function() {
+//         return this.read.ask1 + this.read.ask2;
+//     },
+//     this.mul = function() {
+//         return this.read.ask1 * this.read.ask2;
+//     }
+// }
+
+// const calculator = new Calculator();
+// calculator.read();
+// console.log(calculator.plus());
+// console.log(calculator.mul());
+
+// No.21
+// function Accumulator(startingValue) {
+//     this.currentValue = startingValue;
+//     this.red = function(){
+//         this.currentValue += +prompt(`Numbers!`);
+//     }
+//     this.show = function(){
+//         alert(this.currentValue);
+//     }
+// }
+
+// const accumulator = new Accumulator(0);
+/* behind the sence of this code!
+    acumulator object from new Acucmulator(0)
+    {
+        currentValue : 0;
+        read: function(){
+            this.currentValue += =propmt(`Number!`);
+        },
+        show: function(){
+            alert(this.currentValue);
+        }
+    }
+*/
+
+// accumulator.read();
+// accumulator.read();
+// accumulator.read();
+// accumulator.read();
+// accumulator.show();
+
+// No.22
+// const product1 = {
+//     name: 'Water',
+//     distributor: {
+//       name: 'Giraffe Water Company',
+//       address: {
+//         street: 'Phetchaburi',
+//         subdistrict: 'Thanonphetchaburi',
+//         district: 'Ratchathewi',
+//         province: 'Bangkok'
+//       }
+//     }
+// };
+
+// console.log(product1.distributor.address.province);
+// console.log(product2?.distributor?.address?.province);

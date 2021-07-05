@@ -1,0 +1,120 @@
+/* Global */
+body, html{
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+    background: #f0f2f5;
+    min-width: 500px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 8%;
+    padding: 30px;
+    overflow: hidden;
+    /* border: 5px dashed red; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* Detail */
+.detail{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    /* border: 5px dashed lime; */
+}
+.detail p{
+    font-size: 38px;
+}
+.detail h1{
+    font-size: 64px;
+}
+
+/* LoginBox */
+.container .loginBox{
+    padding: 30px;
+}
+.loginBox{
+    display: flex;
+    flex-direction: column;
+    background:white;
+    box-shadow: 5px 10px 15px;
+    /* border: 5px dashed lime; */
+    border-radius: 8px;
+    width: 25%;
+    flex: none;
+}
+.loginBox input{
+    padding: 10px;
+    margin: 8px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.loginBox hr{
+    color: white;
+    width: 100%;
+}
+.loginBox .login-btn{
+    padding: 10px;
+    margin: 8px;
+    font-size: 34px;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    background: #1877f2;
+    cursor: pointer;
+    transition: 200ms;
+}
+.loginBox .login-btn:hover{
+    filter: brightness(1.1);
+}
+.loginBox p{
+    font-size: 18px;
+    text-align: center;
+    color: blue;
+    opacity: 0.7;
+}
+.loginBox p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.loginBox .signUp-btn{
+    padding: 10px;
+    margin: 8px;
+    flex: auto;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    background: green;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 200ms;
+}
+.loginBox .signUp-btn:hover{
+    opacity: 1;
+}
+
+/* Footer */
+footer{
+    /* display: flex;
+    flex-direction: column; */
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    border: 5px dashed black;
+
+}
+footer p{
+    font-size: 20px;
+    cursor: pointer;
+}
+footer hr{
+    color: black;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,68 +1,87 @@
 /* Global */
+* {
+    box-sizing: border-box;
+}
 body, html{
     font-family: monospace;
     padding: 0;
     margin: 0;
-    background: #f0f2f5;
     min-width: 500px;
+    max-width: 100%;
+    background-color:rgb(240, 242, 245);
+    margin: auto;
 }
 .container {
-    width: 80%;
-    margin: auto;
-    margin-top: 8%;
-    padding: 30px;
-    overflow: hidden;
-    /* border: 5px dashed red; */
+    width: 100%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    margin-top: 110px;
+    height: 100vh;
 }
 
 /* Detail */
 .detail{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    /* border: 5px dashed lime; */
+    width: 450px;
+    margin-right: 80px;
+    margin-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 .detail p{
-    font-size: 38px;
+    font-size: 3.2rem;
+    font-weight: normal;
+    line-height: 32px;
 }
 .detail h1{
-    font-size: 64px;
+    font-size: 6rem;
+    color: #1877F2;
 }
 
 /* LoginBox */
-.container .loginBox{
-    padding: 30px;
+.loginBox{
+    margin-left: 10px;
+    width: 440px;
+    height: fit-content;
 }
 .loginBox{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     background:white;
     box-shadow: 5px 10px 15px;
-    /* border: 5px dashed lime; */
+    /* border: 5px dashed lime; 
     border-radius: 8px;
     width: 25%;
-    flex: none;
+    flex: none; */
+
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 20px;
 }
 .loginBox input{
-    padding: 10px;
-    margin: 8px;
-    font-size: 18px;
-    border-radius: 5px;
+    font-size: 19px;
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 .loginBox hr{
     color: white;
     width: 100%;
 }
 .loginBox .login-btn{
-    padding: 10px;
-    margin: 8px;
-    font-size: 34px;
-    color: white;
-    border-radius: 8px;
+    text-align: center;
     border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 48px;
+    padding: 0 16px;
+    width:96%;
     background: #1877f2;
     cursor: pointer;
     transition: 200ms;
@@ -81,14 +100,17 @@ body, html{
     cursor: pointer;
 }
 .loginBox .signUp-btn{
-    padding: 10px;
-    margin: 8px;
-    flex: auto;
-    font-size: 20px;
-    color: white;
-    border-radius: 8px;
+    text-align: center;
     border: none;
-    background: green;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42b72a;
+    margin-top: 20px;
+    margin-left: 25%;
+    width: 50%;
     opacity: 0.7;
     cursor: pointer;
     transition: 200ms;
@@ -98,23 +120,85 @@ body, html{
 }
 
 /* Footer */
-footer{
-    /* display: flex;
-    flex-direction: column; */
-    flex-wrap: wrap;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 10%;
-    border: 5px dashed black;
+footer {
+    /* width:100%; */
+    height: auto;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    max-width: 100%;
+       flex-direction: column; 
+       /* align-items: flex-end; */
+     
+    }
+    
+    footer .control-footer .footer-p1 {
+        border-bottom: 1px solid #d3d3d3;
+        
+    }
+    
+    footer ul li{
+        text-align: left;
+        flex-wrap: wrap;
+        display: inline;
+        line-height: 30px;
+        word-spacing: 5px;
+        
+    }
+    
+    footer ul li a {
+        text-decoration: none;
+        color: rgb(56, 88, 152);
+    }
+    
+    footer ul li a:hover {
+        text-decoration: underline;
+      }
+    
+      footer ul p {
+          color: grey;
+      }
+    
+      button.btn-plus {
+        width: 40px;
+        /* height: 5px; */
+        background-color: #EBEDF0;
+        text-align: center;
+        border: none;
+        border-radius: 6px;
+        color: grey;
+        font-size: 22px;
+        font-weight: bold;
+        /* padding: 5px; */
+      }
 
-}
-footer p{
-    font-size: 20px;
-    cursor: pointer;
-}
-footer hr{
-    color: black;
-    display: flex;
-    flex-direction: column;
-}
+/* Media */
+
+  @media (max-width: 900px) {
+    .container  {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 5px;    
+    }
+
+    .detail {
+        text-align: center;
+        margin-left: 80px;
+    }
+  
+    .detail h1 {
+        font-size: 3rem;
+        color: #1877F2;
+      }
+    
+      .detail  p {
+        /* text-align: center; */
+        font-size: 1.3rem;
+        font-weight: normal;
+        line-height: 32px;
+      }
+
+  }

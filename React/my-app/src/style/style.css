@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+
+/* Global */
+body,
+html {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+p {
+  font-size: 34px;
+  font-weight: bolder;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+a {
+  text-decoration: 0;
+  color: black;
+}
+li {
+  padding: 1rem;
+}
+
+/* Contents */
+.friends {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  font-weight: bolder;
+}

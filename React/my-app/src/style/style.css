@@ -24,6 +24,10 @@ a {
 li {
   padding: 1rem;
 }
+button {
+  width: 7rem;
+  padding: 0.7%;
+}
 
 /* Contents */
 .friends {

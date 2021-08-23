@@ -1,86 +1,76 @@
 import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
-import axios from "axios";
-import Counter from "./Counter";
+import { useReducer, useState } from "react";
+import "./style/style.css";
+import Button from "./components/Button";
+import Text from "./components/Text";
+import { CountProvider, useCount } from "./components/CountContext";
 
-// let i = 0;
-// function App() {
-//   const [count, setCount] = useState(0);
-//   const [language, setLanguage] = useState(`Thai`);
-//   useEffect(() => {
-//     console.log(`Call`);
-//     console.log(i);
-//     i++;
-//     document.title = `Language: ${language}`;
-//     console.log(language);
-//   }, [language]);
-//   return (
-//     <div>
-//       <h1>UseEffect</h1>
-//       <button onClick={() => setCount((current) => current + 1)}>Click</button>
-//       <button
-//         onClick={() =>
-//           setLanguage((current) => (current === `Thai` ? `English` : `Thai`))
-//         }
-//       >
-//         Change language?
-//       </button>
-//     </div>
-//   );
-// }
+// dispatch({ type: "INCREMENT" });
+const INITIAL_STATE = { count: 0, error: `` };
 
+// Using reducer
+// const counterReducer = (state, action) => {
+//   if (action.type === `INCREMENT`) {
+//     return { ...state, count: state.count + 1 };
+//   } else if (action.type === `DECREMENT`) {
+//     if (state.count > 0) {
+//       // 1st solution
+//       const cloneState = { ...state };
+//       cloneState.count = state.count - 1;
+//       return cloneState;
+
+//       // 2nd solution
+//       // return { ...state, count: state.count - 1 };
+//     }
+//     return state;
+//   } else if (action.type === `RESET`) {
+//     return { ...state, count: (state.count = 0) };
+//   } else {
+//     return state;
+//   }
+// };
+
+// using switch case
+// const counterReducer = (state, action) => {
+//   switch (action.type) {
+//     case `INCREMENT`:
+//       return { ...state, count: state.count + 1 };
+//       break;
+//     case `DECREMENT`:
+//       if (state.count > 0) {
+//         return { ...state, count: state.count - 1 };
+//       } else {
+//         return state;
+//       }
+//       break;
+//     case `RESET`:
+//       return { ...state, count: (state.count = 0) };
+//       break;
+//     case `STEP`:
+//       return { ...state, count: state.count + action.payload.step };
+//   }
+// };
 const App = () => {
-  // const [user, setUser] = useState([
-  //   {
-  //     id: 1,
-  //     name: "John",
-  //     username: "j.Junior",
-  //     phone: 123456789,
-  //   },
-  // ]);
-  // useEffect(() => {
-  //   const wait = async () => {
-  //     try {
-  //       const wait = await axios("https://jsonplaceholder.typicode.com/users", {
-  //         method: "GET",
-  //       });
-  //       setUser(wait.data);
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   };
-  //   wait();
-  // }, []);
-  // return (
-  //   <div>
-  //     <ul>
-  //       {user.map((item) => (
-  //         <li key={item.id}>
-  //           <p>Name: {item.name}</p>
-  //           <p>Username: {item.username}</p>
-  //           <p>Tel: {item.phone}</p>
-  //         </li>
-  //       ))}
-  //     </ul>
-  //   </div>
-  // );
-  // const [second, setSecond] = useState(0);
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     setSecond((curr) => curr + 1);
-  //   }, 1000);
-  // });
-  // return <h1>{second}</h1>;
-  // const [show, setShow] = useState(false);
-  // return (
-  //   <>
-  //     <button onClick={() => (setShow() === false ? true : false)}>
-  //       Show counter
-  //     </button>{" "}
-  //     {show && <Counter />}
-  //   </>
-  // );
+  // const [state, dispatch] = useReducer(counterReducer, INITIAL_STATE);
+  // const [step, setStep] = useState(0);
+  return (
+    <div className="container">
+      {/* 1st solution */}
+      {/* <h1>{state.count}</h1>
+      <input placeholder="Enter values" type="text"></input>
+      <button onClick={() => dispatch({ type: `INCREMENT` })}>+</button>
+      <button onClick={() => dispatch({ type: `STEP`, payload: { step } })}>
+        Step
+      </button>
+      <button onClick={() => dispatch({ type: `DECREMENT` })}>-</button>
+      <button onClick={() => dispatch({ type: `RESET` })}>Reset</button> */}
+
+      <CountProvider>
+        <Text />
+        <Button />
+      </CountProvider>
+    </div>
+  );
 };
 
 export default App;

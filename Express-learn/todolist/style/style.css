@@ -1,0 +1,11 @@
+/* Global */
+.body,
+html {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Todolist</title>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="post-submit"
+        method="POST"
+        enctype="application/x-www-form-urlencoded"
+      >
+        <p style="display: hidden" name="ID"></p>
+        <input type="text" name="list" placeholder="Enter todo" />
+        <input type="text" name="status" placeholder="True or false?" />
+        <input type="date" name="date" />
+        <button type="submit">Post</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+nav {
+  text-align: center;
+  border: 2px solid black;
+  font-size: 34px;
+  background: gray;
+}
+nav button {
+  background: white;
+  padding: 1em;
+  margin: 1em;
+  font-size: 28px;
+  width: 10%;
+  border-radius: 10px;
+  border: none;
+}
+.p1 {
+  background: lightcoral;
+}
+.p2 {
+  background: skyblue;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+.player1,
+.player2,
+.overall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 30%;
+  font-size: 38px;
+}
+.twoPlayers {
+  display: flex;
+  flex-direction: row;
+}

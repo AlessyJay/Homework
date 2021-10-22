@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSX introduction</title>
+</head>
+<body>
+    <div class="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type='text/babel'>
+        const root = document.querySelector('.root');
+        // const style = {
+        //     border: '1px solid black',
+        //     fontSize: '48px',
+        //     color: 'cyan',
+        // }
+        // const ele = (
+        //     <div style={
+        //         {
+        //         width: '80%',
+        //         height: '100vh',
+        //         fontWeight: 'bolder',
+        //         margin: 'auto',
+        //         textAlign: 'center',
+        //     }}>
+        //         <h1 className='header' style={style}>Hello React</h1>
+        //         <p>React lesson</p>
+        //         <label htmlFor="id">Input</label>
+        //         <input type="text" id='id'/>
+        //     </div>
+        // );
+
+        // function app(){
+        //     function func(){
+        //         return <div>func</div>
+        //     }
+        //     return <div>
+        //         {func()}
+        //     </div>
+        // }
+
+        // const boo = true; // cannot render 
+        // const nul = null; // cannot render
+        // const undefine = undefined; // cannot render
+        // const str = 'string!'; // string!
+        // const num = 10; // 10
+
+        // const obj = { // cannot render object!
+        //     name: 'Tom',
+        //     email: 'Jerry@gmail.com',
+        // }
+        // const container = {
+        //     width: '80%',
+        //     margin: 'auto',
+        //     overflow: 'hidden',
+        // }
+
+        // Lab React JSX
+        // Lab 1
+        // const fullName = {
+        //     name: 'Peeranat',
+        //     lastName: 'Somboonsirikul',
+        // }
+        // const birthYear = 2000;
+
+        // const ele = (
+        //     <div style={container}>
+        //     <h1>{fullName.name} {fullName.lastName}</h1>
+        //     <p>{birthYear}</p>
+        //     </div>
+        // )
+
+        // Lab 2
+        // const bmi = {weight: 78, height: 180}
+        // function calBMI(bmi){
+        //     return <h1>{bmi.weight / Math.pow(bmi.height, 2)}</h1>
+        // }
+
+        // Lab 3
+        // const ele = (
+        //     <div>
+        //         <label htmlFor='username'>Click</label>
+        //         <input type="text" className='username' id='username' name='username'/>
+        //     </div>
+        // );
+
+        // Lab 4
+        // function App() { // No, it cannot return any values, because it contains no root div.
+        // return (
+        //     <h1>Welcome to Thailand</h1>
+        //     <h2>Land of smile</h2>
+        // );
+
+        // Lab 5
+        // function App() { // No, the code is not complete. It should contain '/' after <br>
+        // return (
+        //     <div>
+        //     <span>My name is John.</span>
+        //     <br> ---> <br/>
+        //     <span>I'm 27 years old.</span>
+        //     </div>
+        // );
+        // }
+            
+        // Lab 6
+        // const boo = true; // cannot render 
+        // const nul = null; // cannot render
+        // const undefine = undefined; // cannot render
+        // const str = 'string!'; // string!
+        // const num = 10; // 10
+
+        // const obj = { // cannot render object!
+        //     name: 'Tom',
+        //     email: 'Jerry@gmail.com',
+        // }
+
+        // ReactDOM.render(ele, root);
+    </script>
+</body>
+</html>

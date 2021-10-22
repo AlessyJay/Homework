@@ -1,0 +1,26 @@
+/* Global */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap");
+
+body,
+html {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+}
+input {
+  height: 2rem;
+  width: 15rem;
+}
+button {
+  width: 5rem;
+  height: 3rem;
+  border-radius: 10px;
+  margin: 2%;
+  border: none;
+  cursor: pointer;
+}

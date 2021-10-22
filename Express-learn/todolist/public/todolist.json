@@ -1,0 +1,16 @@
+[
+  {
+    "id": "0c3176a9-0844-4d60-84fd-ea10dcf9ffcb",
+    "list": "Travel",
+    "status": true,
+    "date": "9/8/2021",
+    "time": "3:53:36 PM"
+  },
+  {
+    "id": "3da45ab9-c0cf-495e-8292-11bfb76827f7",
+    "list": "Cooking",
+    "status": true,
+    "time": "3:40:15 PM",
+    "date": "9/8/2021"
+  }
+]

@@ -1,0 +1,111 @@
+/* Global */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap");
+
+body,
+html {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 30%;
+  overflow: hidden;
+  margin: auto;
+  background: white;
+  border-radius: 20px;
+  margin-top: 5%;
+  box-shadow: 5px 5px 20px;
+}
+input {
+  font-family: "Fira Sans", sans-serif;
+  height: 2rem;
+  width: 20rem;
+  border: 2px solid black;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  outline: none;
+  font-size: 28px;
+  text-align: center;
+}
+button {
+  position: relative;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    131deg,
+    rgba(131, 58, 180, 1) 22%,
+    rgba(252, 69, 69, 1) 100%
+  );
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  transition: 400ms;
+}
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px rgb(131, 58, 180);
+}
+hr {
+  color: black;
+  width: 65%;
+  margin-bottom: 10%;
+}
+.red {
+  color: red;
+}
+
+/* contents */
+/* Header */
+.TodoHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.TodoHeader h1 {
+  font-size: 48px;
+}
+.TodoHeader p {
+  font-size: 28px;
+}
+
+/* AddForm */
+.itemForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.itemForm button {
+  margin-top: 3%;
+}
+
+/* Items */
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10%;
+}
+.itemInput {
+  display: flex;
+  justify-content: center;
+}
+.btnAddDel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: auto;
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+.btnAddDel button {
+  width: 8rem;
+}

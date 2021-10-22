@@ -157,51 +157,51 @@
 // });
 
 // No.10
-// let ele1 = document.getElementById('mainReg');
-// let ele2 = document.getElementById('ct');
-// let ele3 = document.getElementById('mainCT');
+let ele1 = document.getElementById('mainReg');
+let ele2 = document.getElementById('ct');
+let ele3 = document.getElementById('mainCT');
 
-// ele1.addEventListener('click', () => {
-//     if(ele1.value === 'NE'){
-//         let ct1 = document.createElement('option');
-//         let ct2 = document.createElement('option');
-//         let ct3 = document.createElement('option');
-//         ct1.innerHTML = "Durham";
-//         ct2.innerHTML = "The Angel of the North";
-//         ct3.innerHTML = "The Holy Island of Lindisfarne";
-//         ele3.innerHTML = '';
-//         ele3.appendChild(ct1);
-//         ele3.appendChild(ct2);
-//         ele3.appendChild(ct3);
-//     } else if(ele1.value === 'WM'){
-//         let ct4 = document.createElement('option');
-//         let ct5 = document.createElement('option');
-//         let ct6 = document.createElement('option');
-//         ct4.innerHTML = "Warwick Castle";
-//         ct5.innerHTML = "Anne Hathaway’s cottage";
-//         ct6.innerHTML = "Ironbridge";
-//         ele3.innerHTML = '';
-//         ele3.appendChild(ct4);
-//         ele3.appendChild(ct5);
-//         ele3.appendChild(ct6);
-//     } else if(ele1.value === 'SE'){
-//         let ct7 = document.createElement('option');
-//         let ct8 = document.createElement('option');
-//         let ct9 = document.createElement('option');
-//         ct7.innerHTML = "Bath";
-//         ct8.innerHTML = "The Jurassic Coast";
-//         ct9.innerHTML = "The Cotswolds";
-//         ele3.innerHTML = '';
-//         ele3.appendChild(ct7);
-//         ele3.appendChild(ct8);
-//         ele3.appendChild(ct9);
-//     } else if(ele1.value === 'select'){
-//         let ct10 = document.createElement('option');
-//         ct10.inneHTML = 'Select';
-//         ele3.innerHTML = '';
-//         ele3.appendChild(ct10);
-//     }
-// });
+ele1.addEventListener('click', () => {
+    if(ele1.value === 'NE'){
+        let ct1 = document.createElement('option');
+        let ct2 = document.createElement('option');
+        let ct3 = document.createElement('option');
+        ct1.innerHTML = "Durham";
+        ct2.innerHTML = "The Angel of the North";
+        ct3.innerHTML = "The Holy Island of Lindisfarne";
+        ele3.innerHTML = '';
+        ele3.appendChild(ct1);
+        ele3.appendChild(ct2);
+        ele3.appendChild(ct3);
+    } else if(ele1.value === 'WM'){
+        let ct4 = document.createElement('option');
+        let ct5 = document.createElement('option');
+        let ct6 = document.createElement('option');
+        ct4.innerHTML = "Warwick Castle";
+        ct5.innerHTML = "Anne Hathaway’s cottage";
+        ct6.innerHTML = "Ironbridge";
+        ele3.innerHTML = '';
+        ele3.appendChild(ct4);
+        ele3.appendChild(ct5);
+        ele3.appendChild(ct6);
+    } else if(ele1.value === 'SE'){
+        let ct7 = document.createElement('option');
+        let ct8 = document.createElement('option');
+        let ct9 = document.createElement('option');
+        ct7.innerHTML = "Bath";
+        ct8.innerHTML = "The Jurassic Coast";
+        ct9.innerHTML = "The Cotswolds";
+        ele3.innerHTML = '';
+        ele3.appendChild(ct7);
+        ele3.appendChild(ct8);
+        ele3.appendChild(ct9);
+    } else if(ele1.value === 'select'){
+        let ct10 = document.createElement('option');
+        ct10.inneHTML = 'Select';
+        ele3.innerHTML = '';
+        ele3.appendChild(ct10);
+    }
+});
 
 // Solution 2
 // const region = ['North_East', 'West_Midland', 'South_East'];
@@ -354,71 +354,71 @@
 //     console.log(storage.appendChild(div));
 // });
 
-let buy = document.getElementById('buy-input');
-let amount = document.getElementById('amount-input');
-let day = document.getElementById('date');
-let apply = document.getElementById('add');
-let sum = document.getElementById('totalCount');
-let storage = document.getElementById('storing');
+// let buy = document.getElementById('buy-input');
+// let amount = document.getElementById('amount-input');
+// let day = document.getElementById('date');
+// let apply = document.getElementById('add');
+// let sum = document.getElementById('totalCount');
+// let storage = document.getElementById('storing');
 
-// let txt = document.createElement('h5');
-// let edit = document.createElement('button');
-// let del = document.createElement('button');
-let count = 1
-let totalCount = 0;
+// // let txt = document.createElement('h5');
+// // let edit = document.createElement('button');
+// // let del = document.createElement('button');
+// let count = 1
+// let totalCount = 0;
 
-if(apply.addEventListener('click', () => {
-    let div = document.createElement('div');
-    let txt = document.createElement('h5');
-    let txt2 = document.createElement('h5');
-    let txt3 = document.createElement('h5');
-    let total = document.createElement('p');
-    let edit = document.createElement('button');
-    let delbtn = document.createElement('button');
+// if(apply.addEventListener('click', () => {
+//     let div = document.createElement('div');
+//     let txt = document.createElement('h5');
+//     let txt2 = document.createElement('h5');
+//     let txt3 = document.createElement('h5');
+//     let total = document.createElement('p');
+//     let edit = document.createElement('button');
+//     let delbtn = document.createElement('button');
 
-        div.className = `${count}`;
-        txt.innerHTML = buy.value;
-        txt.className = `${count}`;
-        txt2.innerHTML = amount.value;
-        txt2.className = `${count}`
-        txt3.innerHTML = day.value;
-        txt3.className = `${count}`;
-        total.innerHTML = +amount.value + totalCount;
-        total.className = `${count}`;
-        edit.innerHTML = 'Edit';
-        edit.className = `${count}`;
-        delbtn.innerHTML = 'Delete';
-        delbtn.className = `${count}`;
+//         div.className = `${count}`;
+//         txt.innerHTML = buy.value;
+//         txt.className = `${count}`;
+//         txt2.innerHTML = amount.value;
+//         txt2.className = `${count}`
+//         txt3.innerHTML = day.value;
+//         txt3.className = `${count}`;
+//         total.innerHTML = +amount.value + totalCount;
+//         total.className = `${count}`;
+//         edit.innerHTML = 'Edit';
+//         edit.className = `${count}`;
+//         delbtn.innerHTML = 'Delete';
+//         delbtn.className = `${count}`;
 
-        edit.onclick = (e)=>update(e);
-        delbtn.onclick = (e)=>del(e);   
+//         edit.onclick = (e)=>update(e);
+//         delbtn.onclick = (e)=>del(e);   
 
-        console.log(div.appendChild(txt));
-        console.log(div.appendChild(txt2));
-        console.log(div.appendChild(txt3));
-        console.log(sum.appendChild(total));
-        div.appendChild(edit);
-        div.appendChild(delbtn);
-        storage.appendChild(div)
+//         console.log(div.appendChild(txt));
+//         console.log(div.appendChild(txt2));
+//         console.log(div.appendChild(txt3));
+//         console.log(sum.appendChild(total));
+//         div.appendChild(edit);
+//         div.appendChild(delbtn);
+//         storage.appendChild(div)
 
-        count++;
-}));
+//         count++;
+// }));
 
 // ele2.addEventListener('click', () => {
 //     event.preventDefault();
 // })
 
-const update = function(e) {
-    const taskX = document.getElementsByClassName(e.target.className)[1]
+// const update = function(e) {
+//     const taskX = document.getElementsByClassName(e.target.className)[1]
 
-    let task = prompt('Changing your plan?');
-    taskX.innerHTML = task;
-    }
+//     let task = prompt('Changing your plan?');
+//     taskX.innerHTML = task;
+//     }
 
-const del = function(e){
-    const taskDel = document.getElementsByClassName(e.target.className)[0]
-    let delConfirm = confirm('Are you sure you want to delete?');
-    if(delConfirm){
-        taskDel.remove();
-    }
-}
+// const del = function(e){
+//     const taskDel = document.getElementsByClassName(e.target.className)[0]
+//     let delConfirm = confirm('Are you sure you want to delete?');
+//     if(delConfirm){
+//         taskDel.remove();
+//     }
+// }

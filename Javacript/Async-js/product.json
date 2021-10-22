@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Egg",
+      "price": 5
+    },
+    {
+      "id": "2",
+      "name": "Chicken",
+      "price": 19
+    },
+    {
+      "id": "3",
+      "name": "Avocado",
+      "price": 6
+    }
+  ]
+}

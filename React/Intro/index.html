@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React introduction</title>
+</head>
+<body>
+    <div class="root"></div>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type='text/babel'>
+        const root = document.querySelector('.root')
+        // const input = React.createElement('input', {});
+
+        // // h1 tag
+        // const h1 = React.createElement(
+        // 'h1', 
+        // {
+        //     id: 'header', 
+        //     className: 'header',
+        //     style: {
+        //         color: 'blue',
+        //         fontSize: '64px',
+        //         textAlign: 'center',
+        //     }
+        // },
+        // 'Hello my friends!'); // <h1 id='header' class='header'>Hello World!</h1>
+
+        // // P tag
+        // const p = React.createElement(
+        // 'p', 
+        // {
+        //     style: {
+        //         color: 'red',
+        //         fontSize: '38px',
+        //         textAlign: 'center',
+        //     }
+        // },
+        // 'Friend list');
+
+        // // const li = React.createElement('li', {})
+        // const ul = React.createElement(
+        // 'ul',
+        // {
+        //     style: {
+        //         fontSize: '34px',
+        //         display: 'flex',
+        //         flex: 'auto',
+        //         flexDirection: 'column',
+        //         justifyContent: 'center',
+        //         alignItems: 'center',
+        //         fontWeight: 'bolder',
+        //     }
+        // }, 
+        // React.createElement('li', {}, 'Jim'), 
+        // React.createElement('li', {}, 'Jack'),
+        // React.createElement('li', {}, 'John'),
+        // '');
+
+        // // Container
+        // const container = React.createElement(
+        // 'div',
+        // {
+        //     className: 'container',
+        //     style: {
+        //         width: '80%',
+        //         height: '100vh',
+        //         margin: 'auto',
+        //     },
+        // },
+        // h1, p, ul);
+        
+        const container = (
+            <div className="background">
+                <div>
+                    <h1>Hello my friends!</h1>
+                    <p>JSX introduction</p>
+                    <ul>
+                        <li>James</li>
+                        <li>Kim</li>
+                        <li>John</li>
+                    </ul>
+                </div>
+            </div>
+        );
+        ReactDOM.render(container, root);
+            
+    </script>
+</body>
+</html>

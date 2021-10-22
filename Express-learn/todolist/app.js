@@ -1,99 +1,82 @@
+// const express = require("express");
+// const { readFile, writeFile } = require("fs/promises");
+// const app = express();
+// const todoRouter = require(`./route/todoRoute`);
+
+// app.use(express.json());
+
+// app.use(`/todos`, todoRouter);
+
+// app.use((err, req, res, next) => {
+//   res.status(400).send({ message: err });
+//   next(err);
+// });
+
+// app.listen(8000, () => {
+//   console.log(`This server is running on port 8000`);
+// });
+
+const { Router } = require("express");
 const express = require("express");
-const path = require("path");
+const route = require("./route/Route");
 const app = express();
-const { v4: ID } = require("uuid");
-const { readFile, writeFile } = require("fs/promises");
+// const mysql = require("mysql2/promise");
+// const pool = require("./db/connection");
 
-app.use(express.json());
+// const promise = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   password: "Alessy@123@Raffaello",
+//   database: "my_todo",
+// });
 
-app.get(`/`, async (req, res) => {
-  res.sendFile(path.join(__dirname, "public/todolist.json"));
-  try {
-  } catch (err) {
-    res.status(400).send({ message: `Cannot reload the file` });
-  }
-});
+// promise
+//   .then((connection) => {
+//     console.log("Connect to DB successfully");
+//     const resultPromise = connection.query(
+//       `INSERT into list (title, due_date) VALUES ('Invest with James', '2021-09-18')`
+//     );
+//     // const resultPromise = connection.query("select * from list");
+//     return resultPromise;
+//   })
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 
-app.post(`/post-submit`, async (req, res) => {
-  try {
-    const { list, status, date } = req.body;
-    if (typeof list === `undefined` || list === ``.trim() || list === NaN) {
-      res.status(400).json({ message: `Bad request` });
-    } else if (typeof status !== `undefined` && status !== `boolean`) {
-      res.status(400).json({ message: `Bad request!` });
-    } else {
-      const newTodos = {
-        id: ID(),
-        list: list,
-        status:
-          typeof status === `boolean` ? status === false : status === true,
-        date: isNaN(new Date(date).getTime()) ? null : date,
-      };
+// const pool = mysql.createPool({
+//   host: "localhost",
+//   user: "root",
+//   password: "Alessy@123@Raffaello",
+//   database: "my_todo",
+//   connectionLimit: 100,
+// });
 
-      const result = await readFile(`public/todolist.json`, `utf8`);
-      const arrTodo = JSON.parse(result);
-      arrTodo.push(newTodos);
+// pool.query("select * from list").then(([row]) => {
+//   console.log(row);
+// });
 
-      await writeFile(`public/todolist.json`, JSON.stringify(arrTodo));
+// pool
+//   .execute("insert into list (title, completed, due_date) values (?, ?, ?)", [
+//     "Keeper",
+//     1,
+//     new Date(`2021-09-22`),
+//   ])
+//   .then((result) => {
+//     console.log(result[0]);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 
-      res.status(201).json({ message: `Success!` });
-    }
-  } catch (err) {
-    res.status(500).json({ error: `Bad request :(` });
-  }
-});
+// pool.execute("select * from list where id = ?", [3]).then((result) => {
+//   console.log(result);
+// });
 
-app.delete(`/delete/:id`, async (req, res) => {
-  try {
-    const { id } = req.params;
-    console.log(id);
-    const result = await readFile(`public/todolist.json`, `utf8`);
-    const arrResult = JSON.parse(result);
+// app.use(`/todos`, route);
 
-    const index = arrResult.findIndex((item) => item.id === id);
-    if (index !== -1) {
-      arrResult.splice(index, 1);
-      await writeFile(`public/todolist.json`, JSON.stringify(arrResult));
-      res.status(204).json(`Delete success!`);
-    } else {
-      res.status(400).json({ message: `Something went wrong!` });
-    }
-  } catch (err) {
-    res.status(500).json({ message: `Deleting error!` });
-  }
-});
+app.use("/", route);
 
-app.put(`/edit`, async (req, res) => {
-  try {
-    const { id } = req.query;
-    const { list, status, date } = req.body;
-    if (typeof list == `undefined` || list === ``.trim() || list === NaN) {
-      res.status(400).json({ message: `Request denied!` });
-    } else if (typeof status !== `undefined` && typeof status !== `boolean`) {
-      res.status(400).json({ message: `Request denied!` });
-    } else {
-      const result = await readFile(`public/todolist.json`, `utf8`);
-      const arrTodos = JSON.parse(result);
-      const index = arrTodos.findIndex((item) => item.id === id);
-      if (index !== -1) {
-        arrTodos[index] = {
-          id: id,
-          list: list,
-          status: status || false,
-          date: isNaN(new Date(date).getTime()) ? null : date,
-        };
-        await writeFile(`public/todolist.json`, JSON.stringify(arrTodos));
-        res.status(200).send(`Success updating!`);
-      } else {
-        res.status(400).send({ message: `cannot find ID` });
-      }
-    }
-  } catch (err) {
-    res.status(500).json({ message: `Editing is in bad request` });
-    console.log(err);
-  }
-});
-
-app.listen(8000, () => {
-  console.log(`This server is running on port 8000`);
-});
+app.listen(8000, () => console.log("Server lunch successfully"));

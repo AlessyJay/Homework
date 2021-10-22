@@ -1,0 +1,80 @@
+/* Global */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+.container {
+  margin: auto;
+  overflow: hidden;
+  padding: 0%;
+  width: 80%;
+}
+h1 {
+  font-size: 64px;
+}
+header {
+  text-align: center;
+}
+li {
+  list-style-type: none;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+}
+button {
+  font-family: "Oswald", sans-serif;
+  width: 20%;
+  height: 10%;
+  font-size: 42px;
+  font-weight: bolder;
+  margin: 5%;
+  background: transparent;
+  border: none;
+  transition: 400ms;
+}
+button:hover {
+  transform: scale(1.2);
+  border: black double 10px;
+  border-radius: 10px;
+}
+
+/* contents */
+.options {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.options ul {
+  display: flex;
+  flex-direction: row;
+}
+.options li {
+  margin: 48px;
+  font-size: 38px;
+  font-weight: bolder;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-form input {
+  margin: 25px;
+  font-size: 24px;
+  border-color: black;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  outline: 0;
+  text-align: center;
+}
+.login-form label {
+  margin: 12px;
+  font-size: 24px;
+}

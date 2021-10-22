@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single page application</title>
+</head>
+<body>
+    <div class="root"></div>
+
+    <script>
+        const input = document.createElement('input');
+        const root = document.querySelector('.root');
+        root.append(input);
+        const btn = document.createElement('button');
+        btn.innerHTML = 'add';
+        root.append(btn);
+        const h1 = document.createElement('h1');
+        h1.innerHTML = 'Hello World!';
+
+        // Add event when clicking on btn.
+        btn.addEventListener('click', function(){
+            root.innerHTML = ''; // it will clear everything inside root div first before doing anything.
+            root.append(h1); // after clearing, it will append h1 instead.
+        });
+    </script>
+</body>
+</html>
